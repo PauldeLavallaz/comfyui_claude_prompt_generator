@@ -26,3 +26,34 @@ Puedes instalar este nodo personalizado de dos maneras:
    ```bash
    cd path/to/ComfyUI/custom_nodes
    git clone https://github.com/tu_usuario/comfyui_claude_prompt_generator.git
+
+Instala las dependencias:
+
+bash
+Copy code
+pip install -r comfyui_claude_prompt_generator/requirements.txt
+Reinicia ComfyUI.
+
+Uso
+Obtén una clave API de Anthropic y configúrala como variable de entorno ANTHROPIC_API_KEY, o proporciónala directamente en la entrada del nodo.
+En ComfyUI, encuentra el nodo "Claude Prompt Generator" en la categoría "Prompt Generation".
+Conecta el nodo en tu flujo de trabajo.
+Configura el system_prompt y el user_input según tus necesidades.
+Ejecuta el flujo de trabajo.
+Configuración de la Clave API
+Variable de Entorno: Establece ANTHROPIC_API_KEY en tu entorno.
+
+En Windows (CMD):
+
+cmd
+Copy code
+set ANTHROPIC_API_KEY=tu_clave_api
+En Unix/Linux (bash):
+
+bash
+Copy code
+export ANTHROPIC_API_KEY=tu_clave_api
+Entrada Directa: Puedes proporcionar la clave API directamente en el nodo en el campo api_key.
+
+Licencia
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
