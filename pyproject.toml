@@ -1,0 +1,15 @@
+[project]
+name = "comfyui_claude_prompt_generator"
+description = "Node that generates prompts using Anthropic Claude API."
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["anthropic"]
+
+[project.urls]
+Repository = "https://github.com/PauldeLavallaz/comfyui_claude_prompt_generator"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "comfyui_claude_prompt_generator"
+Icon = ""
